@@ -58,6 +58,15 @@ export default class Home extends Component {
                 messageStore: this.state.messageStore.concat(userName + ': ' + this.state.message)
             });
         }
+
+        this.setState({
+
+            message: '',
+        })
+
+
+
+
     }
     chatCreator() {
         return this.state.messageStore.map((message, index) => {
